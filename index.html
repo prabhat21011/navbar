@@ -1,120 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
     <style>
-       *{
-        margin: 0px;
-       }
-       .navbar{
-        display: flex;
-        background: #000;
-       }
-       .navbar ul{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        /* border: 1px solid red; */
-        transition: all .7s ease-in-out;
-       }
-       .navbar ul li a{
-        text-decoration: none;
-        color: aliceblue;
-       }
-       .navbar ul li{
-        list-style: none;
-        padding-right: 25px;
-        font-size: x-large;
-        
-       }
-        .navCont{
-        width: 100%;
-        justify-content: end;
-        display: none;
-       
-       }
-       h1{
-        display: flex;
-        color: aliceblue;
-        font-size:40px;
-       }
-       @media(max-width:650px)
-       {
-        .navbar ul li{
-            display: none;
-            /* position: absolute; */
-            padding-right: 45px;
-           
+        * {
+            margin: 0px;
         }
-       
-       
-       }
-       @media(min-width:650px)
-       {
-        .navbar ul li{
+
+        .navbar {
+            display: flex;
+            background: #000;
+            position: sticky;
+            top: 0px;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            /* border: 1px solid red; */
+            transition: all .7s ease-in-out;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            padding-right: 25px;
+            font-size: x-large;
+
+        }
+
+        .navCont {
+            width: 100%;
+            justify-content: end;
+            display: none;
+
+        }
+
+        h1 {
+            display: flex;
+            color: aliceblue;
+            font-size: 40px;
+        }
+
+        @media(max-width:650px) {
+            .navbar ul li {
+                display: none;
+                /* position: absolute; */
+                padding-right: 45px;
+
+            }
+
+
+        }
+
+        @media(min-width:650px) {
+            .navbar ul li {
+                display: block;
+
+            }
+
+            label .img {
+                display: none;
+            }
+
+
+        }
+
+        .img {
+            width: 20%;
+            display: flex;
+            margin-left: auto;
+            border-radius: 50%;
+            align-items: center;
+            /* border: 2px solid blue; */
+        }
+
+        #check:checked~ul {
             display: block;
-            
+            background: #000;
+            color: aliceblue;
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            margin-top: 6%;
+            padding-top: 10%;
+            padding-left: 25%;
         }
-         label .img{
+
+        #check:checked~ul li {
+            display: block;
+            padding: 15px;
+
+        }
+
+        #check {
             display: none;
         }
-       
-        
-       }
-       .img{
-        width: 20%;
-        display: flex;
-        margin-left: auto;
-        border-radius: 50%;
-        align-items: center;
-        /* border: 2px solid blue; */
-       }
-
-       #check:checked~ul{
-        display: block;
-        background: #000;
-        color: aliceblue;
-        position: absolute;
-        height: 100%;
-        width: 50%;
-        margin-top: 6%;
-        padding-top: 10%;
-        padding-left: 25%;
-       }
-       #check:checked~ul li{
-        display:block;
-        padding:15px;
-        
-       }
-
-       #check{
-        display: none;
-       }
-   
-       
-       
     </style>
 </head>
+
 <body>
     <div class="cont">
         <div class="navbar">
-           <div>
-            <h1><strong><em>Brand</em></strong></h1>
-           </div>
-           <input type="checkbox" id="check">
-           <label for="check"><img class="img" src="resource/check.jpg" alt=""></label>
-           <ul class="navCont">
+            <div>
+                <h1><strong><em>Brand</em></strong></h1>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check"><img class="img" src="resource/check.jpg" alt=""></label>
+            <ul class="navCont">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact Us</a></li>
-           </ul>
+            </ul>
 
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt aut ratione odit illum ullam iure ab animi
+                numquam sint, eligendi assumenda, similique, ducimus a? Inventore quo ipsam, ullam facere neque soluta,
+                itaque nostrum, recusandae magnam error reprehenderit amet suscipit mollitia. Dolores necessitatibus
+                odio illum laborum libero numquam atque eveniet, nemo temporibus corporis beatae, voluptas eum delectus
+                autem nesciunt quia! Dolores suscipit consequatur optio placeat dicta ut autem debitis enim error
+                eligendi at dolor tempora, totam iusto rerum maiores accusamus doloremque architecto, magnam
+                necessitatibus! Distinctio perspiciatis beatae illo expedita repellendus nobis sapiente neque error,
+                vitae doloribus molestiae sint quasi dolorum optio exercitationem sed! Quisquam earum consectetur atque
+                commodi, inventore id cum eveniet delectus nemo fugiat reprehenderit quasi excepturi voluptate labore
+                aperiam! Architecto, praesentium illo fugit illum accusamus placeat ducimus a obcaecati nam consequuntur
+                at delectus provident ex asperiores cupiditate nobis perspiciatis earum quod tenetur aut laboriosam
+                eligendi maiores! Unde, laudantium? Hic fuga adipisci assumenda voluptatum et eligendi esse neque,
+                mollitia, maxime quo vero. Doloribus, atque error adipisci cumque culpa asperiores repudiandae
+                reiciendis voluptatum natus iusto sint ipsam debitis, fugiat, voluptatem harum numquam tenetur aperiam
+                corporis sapiente laudantium dignissimos eligendi ducimus. Quia non unde nostrum consectetur porro
+                eligendi. Perferendis tenetur reprehenderit eligendi officia eaque, earum molestiae, alias commodi illo
+                natus provident dolorum labore ipsa cupiditate, amet hic ipsum quasi suscipit dolorem sint. Aut
+                architecto nobis illo sequi praesentium adipisci incidunt enim? Aliquam ea consequuntur autem dolores
+                earum temporibus a nesciunt laudantium error odio nisi qui quos beatae ipsam voluptas blanditiis atque
+                asperiores ex, doloribus dolor expedita nemo, tempore repellat cupiditate. Quibusdam sit tempora odit
+                eius aspernatur corporis unde molestiae voluptatibus nostrum. Voluptatibus quae expedita velit quos
+                itaque vitae eaque sed culpa in beatae ratione sapiente ullam cumque harum quis, unde maxime dolorem
+                rerum. Atque, incidunt voluptate, quod assumenda labore est repellendus eos iusto impedit neque
+                excepturi illo veritatis harum, doloribus pariatur error. Necessitatibus minima provident repellendus
+                sint et fugit, ut perspiciatis dolorem inventore debitis voluptatum nesciunt nemo aspernatur tempora.
+                Adipisci excepturi porro praesentium, rerum possimus eligendi error odit fugiat cupiditate, commodi
+                cumque corporis magni dolorum iusto culpa. Necessitatibus sit cupiditate sequi dolores deleniti, cumque
+                eos? Commodi quos iste, animi repudiandae cumque voluptas nostrum doloremque consequuntur a saepe,
+                soluta, nemo aliquid error esse cupiditate id ipsa asperiores deleniti? Repellat accusantium labore
+                magnam corporis consequatur vero quasi, repudiandae molestias minima necessitatibus nemo unde! Qui
+                repellat necessitatibus excepturi quo nobis in impedit quos rerum natus expedita, magnam vero enim ex
+                aut dolores laborum totam magni consequatur, tempore veniam est dolorem harum molestias. Neque, autem.
+                Voluptas corporis et voluptatibus placeat. Voluptatibus sunt blanditiis, sequi alias mollitia adipisci
+                laborum nam illo suscipit consequuntur. Numquam libero aspernatur atque illo vitae eum inventore
+                voluptates omnis, vel odio quos, dolores exercitationem recusandae eligendi. Molestiae praesentium odit
+                dolorum nisi commodi sapiente, mollitia voluptatum consectetur consequatur alias id tenetur veniam
+                consequuntur omnis earum aliquid accusamus. Tempore voluptatem accusamus omnis! Autem reiciendis modi
+                possimus assumenda distinctio laborum provident, cupiditate veritatis porro temporibus expedita
+                molestias laboriosam facilis? Facilis dolor vitae, asperiores quo magni sit porro hic ratione, atque
+                praesentium magnam, qui ducimus debitis reiciendis! Quod consequuntur, nemo culpa harum quam vero
+                accusantium odit dicta veritatis? Aliquid, quidem dolor. Dolore, maiores nemo nulla fugit molestias aut
+                debitis error minima quisquam ratione voluptate illo id laborum accusantium facere vero incidunt, velit
+                dolorum quae nisi necessitatibus iusto cumque. Provident vel eos autem quam, beatae harum ex ducimus
+                consequatur molestias facilis. Nam vitae, cupiditate nemo optio aliquid veniam voluptatem omnis
+                similique, ipsum aut amet beatae temporibus quod non? Ea rem saepe placeat hic repellendus, eaque
+                dignissimos, optio nulla doloribus rerum nisi? Cupiditate quaerat, ipsam tenetur inventore iusto
+                necessitatibus eum! Dolore nam, tempora nobis architecto consectetur harum inventore obcaecati, officiis
+                maxime, neque autem! Labore modi minus fuga perferendis voluptatem voluptate, itaque, dolorum libero
+                assumenda quos sapiente. Voluptatibus quis optio placeat, aspernatur autem in, velit, consectetur nemo
+                perspiciatis qui non ut? Nisi eveniet sint natus? Officiis et quasi aperiam eius quod tempore ut
+                repellendus! Ratione alias sint quos repellat molestiae reiciendis voluptates. Dolores quos accusantium
+                saepe magnam unde aspernatur nobis repudiandae dicta, quidem nesciunt soluta deserunt ab molestiae
+                cupiditate tempora atque blanditiis vitae corporis. Dignissimos nam enim autem, et voluptates animi
+                ducimus, voluptatem facere hic fugit iure dolore tempore possimus, veritatis consectetur cum explicabo.
+                Quam perferendis, quibusdam officia et obcaecati facilis nihil a error esse omnis, non saepe repellendus
+                atque ad nisi voluptatum qui, deleniti molestiae quisquam autem sit. Molestiae ab eos sunt, ipsa
+                eligendi ad deserunt tempora nihil magnam iure quis perspiciatis facere dicta quas, eveniet accusantium
+                maiores temporibus quasi quos ipsum aperiam! Error eaque, voluptatem minima earum enim distinctio
+                sapiente debitis? Sequi quia harum recusandae dicta distinctio! Assumenda animi voluptate mollitia illo
+                officiis dolorem voluptatibus voluptas dolore id tenetur nemo eum, accusamus dignissimos, sed unde
+                itaque tempora ullam ratione distinctio aliquid, recusandae ex voluptatum. Magnam quibusdam quo sunt
+                necessitatibus nesciunt, quaerat ex laboriosam harum explicabo corrupti nulla reprehenderit cum fugit
+                delectus perspiciatis dolor tempora beatae alias maxime repellat? Ex sit exercitationem provident soluta
+                quos quo eius suscipit molestiae! Repellendus eos atque sapiente consequuntur ex pariatur aut quod? Ex
+                iste aspernatur deserunt libero expedita sit! Reiciendis maiores culpa doloribus voluptatem saepe
+                aspernatur deserunt dolore ipsam natus, fugiat iure dolores reprehenderit fugit vel iste et atque. Esse
+                ex dolore accusantium minus sapiente porro necessitatibus ab, similique hic cum, officiis nostrum autem
+                deleniti quibusdam a repellat quidem voluptatibus eveniet non nesciunt blanditiis. Voluptatibus
+                excepturi reiciendis aspernatur illo rerum. Quam quo excepturi provident eveniet beatae optio repellat.
+                Corporis architecto iusto voluptate similique consequatur eum optio laborum quas eos nostrum, velit
+                nobis ipsam est saepe officiis nesciunt. Ipsum, nulla facere. A temporibus similique, suscipit
+                doloremque laboriosam corporis nesciunt doloribus corrupti debitis. Cum veritatis pariatur maiores eius
+                expedita minus ratione rem nobis quas porro soluta maxime ullam vel voluptatum impedit assumenda
+                eligendi sunt, alias ducimus amet error laudantium illum aut? Et molestias quaerat fugit natus neque
+                culpa exercitationem vel enim doloribus, incidunt dignissimos atque velit aut tempora quam modi
+                reiciendis possimus. Dignissimos soluta dolorum omnis consequatur esse non voluptatem tenetur eius,
+                saepe, quisquam incidunt.</p>
         </div>
 
     </div>
 </body>
+
 </html>
