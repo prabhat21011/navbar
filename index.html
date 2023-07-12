@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+       *{
+        margin: 0px;
+       }
+       .navbar{
+        display: flex;
+        background: #000;
+       }
+       .navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        /* border: 1px solid red; */
+        transition: all .7s ease-in-out;
+       }
+       .navbar ul li a{
+        text-decoration: none;
+        color: aliceblue;
+       }
+       .navbar ul li{
+        list-style: none;
+        padding-right: 25px;
+        font-size: x-large;
+        
+       }
+        .navCont{
+        width: 100%;
+        justify-content: end;
+        display: none;
+       
+       }
+       h1{
+        display: flex;
+        color: aliceblue;
+        font-size:40px;
+       }
+       @media(max-width:650px)
+       {
+        .navbar ul li{
+            display: none;
+            /* position: absolute; */
+            padding-right: 45px;
+           
+        }
+       
+       
+       }
+       @media(min-width:650px)
+       {
+        .navbar ul li{
+            display: block;
+            
+        }
+         label .img{
+            display: none;
+        }
+       
+        
+       }
+       .img{
+        width: 20%;
+        display: flex;
+        margin-left: auto;
+        border-radius: 50%;
+        align-items: center;
+        /* border: 2px solid blue; */
+       }
+
+       #check:checked~ul{
+        display: block;
+        background: #000;
+        color: aliceblue;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        margin-top: 6%;
+        padding-top: 10%;
+        padding-left: 25%;
+       }
+       #check:checked~ul li{
+        display:block;
+        padding:15px;
+        
+       }
+
+       #check{
+        display: none;
+       }
+   
+       
+       
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="navbar">
+           <div>
+            <h1><strong><em>Brand</em></strong></h1>
+           </div>
+           <input type="checkbox" id="check">
+           <label for="check"><img class="img" src="resource/check.jpg" alt=""></label>
+           <ul class="navCont">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+           </ul>
+
+        </div>
+
+    </div>
+</body>
+</html>
